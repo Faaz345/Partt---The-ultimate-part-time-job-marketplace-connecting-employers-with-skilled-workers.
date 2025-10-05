@@ -1,0 +1,89 @@
+Partt App - Version 1.0.1 (Build 2)
+Release Date: October 1, 2025
+
+═══════════════════════════════════════════════════════════════════
+
+💰 NEW FEATURES
+
+✨ AdMob Monetization Integration
+   • Full Google AdMob integration for revenue generation
+   • Banner ads displayed on Manager Dashboard (2 strategic placements)
+   • Interstitial ads shown after successful job postings
+   • Real-time ad loading with automatic retry mechanism
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 IMPROVEMENTS
+
+• Enhanced Ad Loading: Smart retry logic (up to 3 attempts) for better ad fill rate
+• Better Error Handling: Detailed logging for ad loading status and issues
+• Graceful Fallbacks: Smooth UI experience when ads are temporarily unavailable
+• Performance Optimization: Always use production ad units for maximum revenue
+• Improved Debug Visibility: Enhanced logging for troubleshooting ad issues
+
+═══════════════════════════════════════════════════════════════════
+
+🐛 BUG FIXES
+
+• Fixed ad loading initialization issues
+• Resolved ad unit ID configuration problems
+• Improved error recovery for network-related ad failures
+• Enhanced debug logging for better troubleshooting
+
+═══════════════════════════════════════════════════════════════════
+
+📊 TECHNICAL DETAILS
+
+Version: 1.0.1
+Build Number: 2
+APK Size: 56.3 MB
+Min SDK: Android 5.0 (API level 21)
+Target SDK: Android 14 (API level 34)
+
+═══════════════════════════════════════════════════════════════════
+
+💡 NOTES FOR TESTERS
+
+• Ads may take 1-24 hours to fully activate after initial setup
+• Internet connection required for ads to load
+• Some ad requests may initially fail (error code 3 - "No fill") - this is normal
+• Retry logic will automatically attempt to reload failed ads
+• Check logs for detailed ad loading information
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 WHAT TO TEST
+
+1. Manager Dashboard - Verify banner ads appear (top and bottom)
+2. Job Posting Flow - Confirm interstitial ad shows after posting job
+3. Ad Loading - Check loading states and error handling
+4. Network Scenarios - Test with WiFi, mobile data, and offline
+5. Multiple Sessions - Verify ads reload correctly on app restart
+
+═══════════════════════════════════════════════════════════════════
+
+📱 INSTALLATION
+
+APK Location: build/app/outputs/flutter-apk/app-release.apk
+
+To Install:
+1. Download the APK file
+2. Enable "Install from Unknown Sources" in device settings
+3. Open and install the APK
+4. Launch and test the new features
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 COMING NEXT
+
+• Additional ad placements (Worker Dashboard, Job Search)
+• Ad performance optimization
+• Revenue analytics dashboard
+• A/B testing for ad placement
+• Rewarded ads for premium features
+
+═══════════════════════════════════════════════════════════════════
+
+For questions or issues, please contact the development team.
+
+Thank you for testing Partt v1.0.1! 🎉

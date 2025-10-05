@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Firebase Configuration Values -->
+    <string name="default_web_client_id">91234208331-5p2n41o06hhsfnft8v3v5pa5ejmukv5i.apps.googleusercontent.com</string>
+    <string name="firebase_database_url"></string>
+    <string name="gcm_defaultSenderId">91234208331</string>
+    <string name="google_api_key">AIzaSyDzk4MjoMkW8Yg5OR6hcZYapVmJ-HmjDo4</string>
+    <string name="google_app_id">1:91234208331:android:eeb92963bb5b56e8d5dbce</string>
+    <string name="google_crash_reporting_api_key">AIzaSyDzk4MjoMkW8Yg5OR6hcZYapVmJ-HmjDo4</string>
+    <string name="google_storage_bucket">partt-2d8fb.firebasestorage.app</string>
+    <string name="project_id">partt-2d8fb</string>
+</resources>

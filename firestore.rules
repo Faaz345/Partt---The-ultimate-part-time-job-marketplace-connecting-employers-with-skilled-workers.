@@ -1,0 +1,75 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // User profiles
+    match /users/{userId} {
+      allow read: if true;
+      allow write, delete: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Jobs
+    match /jobs/{jobId} {
+      allow read: if true;
+      allow create: if request.auth != null && request.resource.data.managerId == request.auth.uid;
+      allow update, delete: if request.auth != null && resource.data.managerId == request.auth.uid;
+    }
+    
+    // Job applications
+    match /applications/{applicationId} {
+      // Allow workers to read their own applications and managers to read applications for their jobs
+      allow read: if request.auth != null && (
+        resource.data.workerId == request.auth.uid ||
+        resource.data.managerId == request.auth.uid
+      );
+      allow create: if request.auth != null && request.resource.data.workerId == request.auth.uid;
+      // Allow workers to update/delete their own applications and managers to update applications for their jobs
+      allow update, delete: if request.auth != null && 
+        (resource.data.workerId == request.auth.uid || 
+         resource.data.managerId == request.auth.uid);
+    }
+    
+    // Chat conversations
+    match /conversations/{conversationId} {
+      // Allow any authenticated user to read conversations (for checking existence and listening)
+      // In production, you may want to restrict this to participants only
+      allow read, create: if request.auth != null;
+      
+      // Only participants can update/delete their conversations
+      allow update, delete: if request.auth != null && 
+        request.auth.uid in resource.data.participantIds;
+      
+      // Messages within conversations
+      match /messages/{messageId} {
+        // Allow authenticated users to read/create messages
+        // In production, you should verify they are participants
+        allow read, create: if request.auth != null;
+        
+        // Users can update/delete their own messages
+        allow update, delete: if request.auth != null && 
+          resource.data.senderId == request.auth.uid;
+      }
+    }
+    
+    // Notifications
+    match /notifications/{notificationId} {
+      // Users can only read their own notifications
+      allow read: if request.auth != null && 
+                  request.auth.uid == resource.data.userId;
+      
+      // Any authenticated user can create notifications
+      // This allows managers to send notifications to workers and vice versa
+      allow create: if request.auth != null;
+      
+      // Users can only update/delete their own notifications
+      allow update, delete: if request.auth != null && 
+                              request.auth.uid == resource.data.userId;
+    }
+    
+    // Notification settings
+    match /notificationSettings/{userId} {
+      // Users can only read/write their own notification settings
+      allow read, write: if request.auth != null && 
+                           request.auth.uid == userId;
+    }
+  }
+}

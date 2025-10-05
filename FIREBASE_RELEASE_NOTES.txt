@@ -1,0 +1,23 @@
+Version 1.0.1 (Build 2) - AdMob Monetization Update
+
+NEW:
+✨ Google AdMob integration - Banner & Interstitial ads
+💰 Revenue generation enabled
+🔄 Smart ad loading with auto-retry (3 attempts)
+
+IMPROVEMENTS:
+🔧 Enhanced error handling for ad loading
+📊 Detailed ad loading logs for debugging
+⚡ Always use production ad units
+
+FIXES:
+🐛 Resolved ad initialization issues
+🐛 Fixed ad unit configuration
+🐛 Improved network error recovery
+
+TESTING NOTES:
+⏰ New ads may take 1-24 hours to activate
+🌐 Requires internet connection
+📱 Test on Manager Dashboard & Job Posting flow
+
+APK: 56.3 MB | Min: Android 5.0+ | Target: Android 14
