@@ -6,9 +6,12 @@
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.9.2-02569B?style=for-the-badge&logo=flutter)](https://flutter.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-Latest-FFCA28?style=for-the-badge&logo=firebase)](https://firebase.google.com)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Private-orange?style=for-the-badge)](#)
 
-[Features](#features) • [Screenshots](#screenshots) • [Installation](#installation) • [Tech Stack](#tech-stack) • [Contributing](#contributing)
+**⚠️ PRIVATE REPOSITORY - ALL RIGHTS RESERVED**
+
+[Features](#features) • [Screenshots](#screenshots) • [Tech Stack](#tech-stack)
 
 </div>
 
@@ -101,13 +104,9 @@ Partt is a modern, full-featured mobile application that revolutionizes the part
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/partt.git
-   cd partt
-   ```
+> **⚠️ Note**: This is a private repository. Unauthorized cloning, copying, or distribution is prohibited.
 
-2. **Install dependencies**
+1. **Install dependencies**
    ```bash
    flutter pub get
    ```
@@ -244,24 +243,6 @@ flutter test --coverage
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Code Style
-
-- Follow [Effective Dart](https://dart.dev/guides/language/effective-dart) guidelines
-- Use meaningful variable and function names
-- Add comments for complex logic
-- Format code with `dart format .`
-
----
 
 ## 🐛 Known Issues
 
@@ -286,36 +267,38 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+## 📄 License & Copyright
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**© 2025 Faaz Razzaq. All Rights Reserved.**
 
----
+This software is proprietary and confidential. Unauthorized copying, distribution, modification, or use of this software, via any medium, is strictly prohibited without the express written permission of the copyright holder.
 
-## 🙏 Acknowledgments
-
-- [Flutter Team](https://flutter.dev) for the amazing framework
-- [Firebase](https://firebase.google.com) for backend services
-- [Google AdMob](https://admob.google.com) for monetization
-- All open-source contributors
+For the complete license terms, see the [LICENSE](LICENSE) file.
 
 ---
 
-## 📞 Support
+## ⚠️ Legal Notice
 
-For support, create an issue in this repository.
+**PRIVATE & CONFIDENTIAL**
 
----
+This repository and its contents are private property. The source code, documentation, and all related materials are protected by copyright law and international treaties. 
 
-## ⭐ Show Your Support
+**Prohibited Actions:**
+- ❌ Copying or reproducing the code
+- ❌ Distributing or sharing the software
+- ❌ Modifying or creating derivative works
+- ❌ Using the code for commercial purposes
+- ❌ Reverse engineering or decompiling
 
-If you find this project helpful, please give it a ⭐️!
+Unauthorized use will result in legal action.
 
 ---
 
 <div align="center">
 
 **Made with ❤️ using Flutter**
+
+**© 2025 Faaz Razzaq - Partt. All Rights Reserved.**
 
 [⬆ Back to Top](#partt---part-time-job-marketplace-)
 
