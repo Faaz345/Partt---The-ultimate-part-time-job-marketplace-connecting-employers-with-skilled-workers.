@@ -269,7 +269,7 @@ flutter test --coverage
 
 ## 📄 License & Copyright
 
-**© 2025 Faaz Razzaq. All Rights Reserved.**
+**© 2025 Mohammad Faaz Siddiqui. All Rights Reserved.**
 
 This software is proprietary and confidential. Unauthorized copying, distribution, modification, or use of this software, via any medium, is strictly prohibited without the express written permission of the copyright holder.
 
@@ -298,7 +298,7 @@ Unauthorized use will result in legal action.
 
 **Made with ❤️ using Flutter**
 
-**© 2025 Faaz Razzaq - Partt. All Rights Reserved.**
+**© 2025 Mohammad Faaz Siddiqui - Partt. All Rights Reserved.**
 
 [⬆ Back to Top](#partt---part-time-job-marketplace-)
 
